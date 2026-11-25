@@ -186,6 +186,37 @@ details p{margin:0 0 24px;color:var(--muted);max-width:66ch}
 .foot .ph{background:rgba(217,182,107,.18);border-color:#D9B66B}
 .foot__note{opacity:.7;font-size:13px}
 
+/* help */
+.help{padding:96px 0}
+.hgroup{font:700 13px/1 var(--f-text);letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin:44px 0 16px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hgrid--2{grid-template-columns:repeat(2,1fr)}
+.hcard{display:flex;flex-direction:column;gap:8px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--brass);padding:22px 22px 18px;text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
+.hcard h4{font:700 20px/1.2 var(--f-display);margin:0}
+.hcard p{margin:0;color:var(--muted);font-size:16px;line-height:1.5;flex:1}
+.hcard__more{font-weight:700;font-size:15px;color:var(--green)}
+.hcard__more::after{content:' \2192'}
+.hcard:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(23,35,31,.1);border-top-color:var(--green)}
+.hbiz{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--green);color:#EFF3F0;padding:26px 28px;text-decoration:none;border-radius:2px}
+.hbiz h4{font:700 22px/1.2 var(--f-display);margin:0 0 6px}
+.hbiz p{margin:0;max-width:64ch;color:#CFDAD5}
+.hbiz .hcard__more{color:#fff;white-space:nowrap}
+.help__all{margin:32px 0 0}
+/* services */
+.svc{padding:calc(var(--hh) + 56px) 0 96px}
+.svc__title{font-size:clamp(34px,5vw,60px)}
+.svc__note{background:var(--white);border-left:4px solid var(--brass);padding:16px 20px;margin:0 0 8px;max-width:64ch}
+.svc .hgroup{margin-top:40px}
+.svc__list details.sd{border-top:1px solid var(--line)}
+.svc__list details.sd:last-child{border-bottom:1px solid var(--line)}
+.sd ul{margin:0 0 24px;padding-left:22px;display:grid;gap:8px;color:var(--muted);max-width:68ch}
+.svc__cta{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;margin-top:48px}
+@media (max-width:900px){
+  .help{padding:64px 0}
+  .hgrid,.hgrid--2{grid-template-columns:1fr}
+  .hbiz{flex-direction:column;align-items:flex-start;gap:12px}
+}
+
 @media (max-width:900px){
   .nav{display:none}
   .header__cta{display:none}
